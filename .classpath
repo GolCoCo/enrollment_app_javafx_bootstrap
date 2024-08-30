@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/scenebuilder8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JsonSimple"/>
+	<classpathentry kind="lib" path="src/enrollment/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="src/enrollment/libs/webcam-capture-0.3.10-RC7.jar"/>
+	<classpathentry kind="lib" path="src/enrollment/libs/bridj-0.6.3-20130316.190111-13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

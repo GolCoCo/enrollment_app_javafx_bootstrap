@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="loginForm" prefHeight="830.0" prefWidth="1280.0" style="-fx-background-color: linear-gradient(to top, #0e7dae, #0d59aa);" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enrollment.controller.LoginController">
+   <center>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="405.0" styleClass="login-form" stylesheets="@../assets/css/custom.css" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="264.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="68.0" left="40.0" right="40.0" top="56.0" />
+         </padding>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="29.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="29.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="29.0" prefHeight="29.0" styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Login CAIXA INTRANET" textFill="#495057">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Informe usuário e senha da rede" textFill="#495057" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets top="24.0" />
+               </padding>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="1.0" percentHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="1.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Usuário" textFill="#212529">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="pwdField" prefHeight="50.0" GridPane.rowIndex="6" />
+                        <TextField fx:id="userField" prefHeight="50.0" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Senha" textFill="#212529" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <GridPane GridPane.rowIndex="8">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="loginButton" contentDisplay="CENTER" defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="44.0" text="Entrar" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="btn-blue" />
+                                    <String fx:value="sfpro-font-bold" />
+                                    <String fx:value="btn-16lg" />
+                                 </styleClass>
+                                 <stylesheets>
+                                    <URL value="@../assets/css/custom.css" />
+                                    <URL value="@../assets/css/bootstrapfx.css" />
+                                 </stylesheets>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="44.3" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="44.3" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="ou" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Pane fx:id="dashLeft" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="144.0" GridPane.columnIndex="0" />
+                        <Pane fx:id="dashRight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="144.0" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="44.0" text="Certificado Digital" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-o-primary" />
+                        <String fx:value="sfpro-font-bold" />
+                        <String fx:value="btn-16lg" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../assets/css/bootstrapfx.css" />
+                        <URL value="@../assets/css/custom.css" />
+                     </stylesheets>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

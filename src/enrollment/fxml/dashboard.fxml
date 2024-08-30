@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enrollment.controller.DashboardController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="830.0" prefWidth="1280.0" styleClass="home-background" stylesheets="@../assets/css/custom.css">
+         <top>
+            <GridPane prefHeight="62.0" style="-fx-background-color: linear-gradient(to left, #0D58AA 92.81%, #4989C4 100%);" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="70.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="36.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane styleClass="header-background" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="41.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="21.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="4.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="23.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="4.5" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="label4" text="02:45" textFill="WHITE" GridPane.columnIndex="7">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Sair" GridPane.columnIndex="3">
+                           <stylesheets>
+                              <URL value="@../assets/css/custom.css" />
+                              <URL value="@../assets/css/bootstrapfx.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="button-third" />
+                              <String fx:value="btn-16sm" />
+                              <String fx:value="sfpro-font-bold" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" styleClass="setting-btn" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" styleClass="clock-btn" stylesheets="@../assets/css/custom.css" text="Button" GridPane.columnIndex="5" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="42.5" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="4.0" prefWidth="30.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="label1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Olá, Ana Maria da Silva" textAlignment="RIGHT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="label2" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="5415548781-0 . Unicode . 1234" textFill="WHITE" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label3" layoutX="10.0" layoutY="16.0" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="987654" textFill="WHITE" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="header-background-left" stylesheets="@../assets/css/custom.css" />
+               </children>
+            </GridPane>
+         </top>
+         <bottom>
+            <GridPane maxHeight="60.0" minHeight="30.0" prefHeight="36.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="41.7" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.4" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="41.7" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <padding>
+                  <Insets bottom="8.0" left="12.0" right="12.0" top="8.0" />
+               </padding>
+               <children>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="20.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" percentWidth="2.0" prefWidth="8.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="19.0" prefWidth="102.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.5" prefWidth="22.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="20.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" percentWidth="2.0" prefWidth="8.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="btnCamera" mnemonicParsing="false" onAction="#handleCameraButtonAction" styleClass="camera-btn-off" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="0" />
+                        <Label fx:id="label5" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Câmera conectada" textFill="#343a40" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="12.8" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnFinger" mnemonicParsing="false" onAction="#handleFingerButtonAction" styleClass="finger-btn-off" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="4" />
+                        <Label fx:id="label6" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Leitor biométrico conectado" textFill="#343a40" GridPane.columnIndex="6">
+                           <font>
+                              <Font size="12.8" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="label8" alignment="CENTER_RIGHT" contentDisplay="RIGHT" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="versão 1.0.0" textAlignment="RIGHT" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="12.8" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label7" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Caixa - Biometria" textFill="#343a40" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="12.8" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" percentHeight="12.9" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="46.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="18.75" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="83.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="2.0" percentHeight="50.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="btnFinish" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleFinishButtonAction" stylesheets="@../assets/css/custom.css" text="Finalizar Atendimento" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="sfpro-font-bold" />
+                                    <String fx:value="btn-orange" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <GridPane.margin>
+                              <Insets left="32.0" right="10.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Label fx:id="label11" alignment="BASELINE_LEFT" styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Bruno Santos Pereira" textFill="#0f4785" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label12" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="CPF:  056.526.907-04   34 anos" textFill="#434343" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="16.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="32.27" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="16.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="16.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane styleClass="normal-form" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" percentHeight="7.9" prefHeight="24.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <children>
+                              <Label fx:id="label13" styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Dados pessoais" textFill="#0f4785">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="9.1" prefHeight="24.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Situação CPF" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label14" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Regular" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Nome de Registro" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label15" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Bruno Santos Pereira" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="4">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Filiação" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label16" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Vera dos Santos Pereira" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="6">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Título de Eleitor" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label17" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="000.696.660302" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="8">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Nascimento" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label18" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="12/03/1988" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="10">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Naturalidade" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label19" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="São Paulo/SP" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="12">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Ano de Óbito" textFill="#434343">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="label20" styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" textFill="#434343" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </padding>
+                        </GridPane>
+                        <GridPane styleClass="normal-form" stylesheets="@../assets/css/custom.css" GridPane.columnIndex="3">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="42.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="54.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <padding>
+                              <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                           </padding>
+                           <children>
+                              <GridPane GridPane.columnIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" percentHeight="15.79" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="53.95" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="13.47" prefHeight="45.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleGotoFingerButtonAction" text="Coletar Biometria" GridPane.rowIndex="4">
+                                       <styleClass>
+                                          <String fx:value="btn-blue" />
+                                          <String fx:value="sfpro-font-bold" />
+                                          <String fx:value="btn-16lg" />
+                                       </styleClass>
+                                       <stylesheets>
+                                          <URL value="@../assets/css/custom.css" />
+                                          <URL value="@../assets/css/bootstrapfx.css" />
+                                       </stylesheets>
+                                    </Button>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Impressões Digitais" textFill="#0f4785">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Data da última coleta: (não realizada)" textFill="#434343" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="2">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" percentHeight="43.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" percentHeight="43.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <GridPane>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="7.43" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="2.0" percentWidth="16.23" prefWidth="10.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <GridPane>
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Pane fx:id="paneLeftHand" styleClass="btn-left-hand" stylesheets="@../assets/css/custom.css" GridPane.rowIndex="1">
+                                                         <GridPane.margin>
+                                                            <Insets />
+                                                         </GridPane.margin>
+                                                      </Pane>
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane GridPane.columnIndex="3">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="MİNIMO" textFill="#434343" />
+                                                      <Pane fx:id="paneLeftFinger1" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="59.0" layoutY="10.0" GridPane.columnIndex="5">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="ANELAR" textFill="#434343" />
+                                                      <Pane fx:id="paneLeftFinger2" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="7">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="MĒDIO" textFill="#434343" />
+                                                      <Pane fx:id="paneLeftFinger3" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="9">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="INDICADOR" textFill="#434343" />
+                                                      <Pane fx:id="paneLeftFinger4" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="11">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="POLEGAR" textFill="#434343" />
+                                                      <Pane fx:id="paneLeftFinger5" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane layoutX="10.0" layoutY="10.0" GridPane.rowIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="7.43" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.23" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="1.0" prefWidth="8.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="2.0" percentWidth="16.23" prefWidth="10.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <GridPane>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Pane fx:id="paneRightHand" styleClass="btn-right-hand" stylesheets="@../assets/css/custom.css" GridPane.rowIndex="1">
+                                                         <GridPane.margin>
+                                                            <Insets />
+                                                         </GridPane.margin>
+                                                      </Pane>
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane GridPane.columnIndex="3">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="MİNIMO" textFill="#434343" />
+                                                      <Pane fx:id="paneRightFinger1" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="59.0" layoutY="10.0" GridPane.columnIndex="5">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="ANELAR" textFill="#434343" />
+                                                      <Pane fx:id="paneRightFinger2" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="7">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="MĒDIO" textFill="#434343" />
+                                                      <Pane fx:id="paneRightFinger3" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="9">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="INDICADOR" textFill="#434343" />
+                                                      <Pane fx:id="paneRightFinger4" GridPane.rowIndex="1" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="11">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <Pane fx:id="paneRightFinger5" GridPane.rowIndex="1" />
+                                                      <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="POLEGAR" textFill="#434343" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="388.0" layoutY="26.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" percentHeight="15.79" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" percentHeight="53.95" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" percentHeight="13.47" prefHeight="45.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleGotoCameraButtonAction" text="Coletar Biometria" GridPane.rowIndex="4">
+                                       <styleClass>
+                                          <String fx:value="btn-blue" />
+                                          <String fx:value="sfpro-font-bold" />
+                                          <String fx:value="btn-16lg" />
+                                       </styleClass>
+                                       <stylesheets>
+                                          <URL value="@../assets/css/custom.css" />
+                                          <URL value="@../assets/css/bootstrapfx.css" />
+                                       </stylesheets>
+                                    </Button>
+                                    <Pane fx:id="imagePane" minHeight="50.0" minWidth="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <ImageView fx:id="imgPhoto" fitHeight="170.0" fitWidth="130.0" preserveRatio="true" />
+                                       </children>
+                                    </Pane>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Imagem Facial" textFill="#0f4785">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="Data da última coleta: (não realizada)" textFill="#434343" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <Region fx:id="regionDark" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00000044;" visible="false" />
+      <BorderPane fx:id="paneCameraCheck" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="453.0" style="-fx-background-color: white; -fx-background-radius: 12px;" visible="false">
+         <padding>
+            <Insets bottom="32.0" left="24.0" right="24.0" top="32.0" />
+         </padding>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" percentHeight="13.27" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="10.62" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="10.62" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="31.86" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="19.47" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" styleClass="camera-btn-off" stylesheets="@../assets/css/custom.css" />
+                  <Label styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Câmera não identificada" textFill="#0f4785" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleCameraOKButtonAction" text="Entendi" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../assets/css/custom.css" />
+                        <URL value="@../assets/css/bootstrapfx.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="btn-blue" />
+                        <String fx:value="sfpro-font-bold" />
+                        <String fx:value="btn-16lg" />
+                     </styleClass>
+                  </Button>
+                  <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="1 - Verifique se os cabos estão devidamente conectados.&#10;2 - Reinicie o sistema para que possa ser feito a identificação do câmera." textAlignment="CENTER" textFill="#434343" wrapText="true" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="paneFingerCheck" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="453.0" style="-fx-background-color: white; -fx-background-radius: 12px;" visible="false">
+         <padding>
+            <Insets bottom="32.0" left="24.0" right="24.0" top="32.0" />
+         </padding>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" percentHeight="13.27" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="10.62" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="10.62" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="31.86" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="8.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="19.47" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" styleClass="finger-btn-off" stylesheets="@../assets/css/custom.css" />
+                  <Label styleClass="sfpro-font-bold" stylesheets="@../assets/css/custom.css" text="Leitor biométrico não identificado" textFill="#0f4785" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleFingerOKButtonAction" text="Entendi" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-blue" />
+                        <String fx:value="sfpro-font-bold" />
+                        <String fx:value="btn-16lg" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../assets/css/custom.css" />
+                        <URL value="@../assets/css/bootstrapfx.css" />
+                     </stylesheets>
+                  </Button>
+                  <Label styleClass="sfpro-font-regular" stylesheets="@../assets/css/custom.css" text="1 - Verifique se os cabos estão devidamente conectados.&#10;2 - Reinicie o sistema para que possa ser feito a identificação do leitor biométrico." textAlignment="CENTER" textFill="#434343" wrapText="true" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>
